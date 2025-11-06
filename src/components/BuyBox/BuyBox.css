@@ -1,0 +1,58 @@
+.tech-box-s {
+  display: flex;
+  padding: 35px 0 35px 0;
+  height: auto;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.mini-tech-box {
+  display: flex;
+  width: 296px;
+  height: auto;
+  flex-direction: column;
+
+  background-color: #030303;
+  border-radius: 12px;
+  border-color: #24272c;
+}
+
+.h-mini-box-txt {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "MuseoModerno", sans-serif;
+  gap: 24px;
+  color: #fff;
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.mini-box-txt {
+  font-weight: 400;
+  font-family: "Spline Sans", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  color: #a0a0a0;
+  margin: 24px 24px 24px 24px;
+}
+
+.buyButton {
+  width: 133px;
+  height: 48px;
+  color: black;
+  background-color: chartreuse;
+  border: 1px;
+  border-radius: 12px;
+  border-color: #24272c;
+}
+
+.dev-icon-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 24px 25px 24px;
+  flex-wrap: wrap;
+}

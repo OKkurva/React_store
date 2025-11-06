@@ -1,0 +1,6 @@
+export * from './header'
+export * from './footer'
+export * from './Slider'
+export * from './Article'
+export * from './ProductDesc'
+export * from './BuyBox'

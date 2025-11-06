@@ -1,0 +1,44 @@
+h1{
+    color: rgb(174, 245, 235);
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    border: 1px solid rgb(32, 180, 39);
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 5px 15px;     
+}
+
+.main-wrapper{
+  width: 85%;
+  margin: 0 auto;
+}
+    
+p{
+    color:rgb(32, 180, 39);
+    font-size: 30px;
+    font-family: 'Saira Condensed', sans-serif;
+    text-indent: 50px;
+    background-color: rgba(0,0,0,0.5);
+    margin: 20px 200px 20px 200px;
+    
+}
+body{
+    background-color:black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.keyboard{
+    width: 700px;
+    display: block;
+    margin: 0 auto;
+}
+
+.img-wrapper{
+    display: flex;
+    align-items: center;
+    height:400px;
+    justify-content: space-around; 
+}

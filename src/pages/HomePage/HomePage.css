@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  min-height: 100vh;
+  background-color: #000;
+  /* background: grey url('../img/logo.jpg') no-repeat; */
+  background-size: cover;
+}
+
+.white {
+  padding: 0px;
+  float: right;
+  color: rgb(32, 180, 39);
+  font-family: "Archivo Narrow", sans-serif;
+  letter-spacing: 1px;
+}
+
+
+
+

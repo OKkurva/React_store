@@ -4,8 +4,6 @@ import "./Buy.css";
 import BuyBox from "../../components/BuyBox/BuyBox";
 import { buyBoxes } from "../../constants";
 
-
-
 function Buy() {
   return (
     <>
@@ -14,11 +12,11 @@ function Buy() {
         <div className="box">
           {buyBoxes.map((box) => (
             <BuyBox
+             key={box.id} 
               id={box.id}
               img={box.img}
               title={box.title}
               desc={box.desc}
-              
             />
           ))}
         </div>

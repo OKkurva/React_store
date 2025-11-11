@@ -1,13 +1,21 @@
 // src/context/CartContext.js
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 const CartContext = createContext();
 
 // Провайдер — обгортка для всієї апки
 export function CartProvider({ children }) {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(() => {
+    const saved = localStorage.getItem("cart");
+    return saved ? JSON.parse(saved) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
 
   const addToCart = (product) => {
+    console.log(product);
     // Перевіряємо, чи товар уже в кошику
     const existing = cart.find((item) => item.id === product.id);
     if (!existing) {

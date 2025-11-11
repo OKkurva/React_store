@@ -2,8 +2,10 @@ import React from "react";
 import "./header.css";
 import cartIcon from "../../img/cartIcon.png";
 import { Link } from "react-router-dom";
+import { useCart } from "../../Context/CartContext";
 
 function Header() {
+  const { cart } = useCart();
   return (
     <>
       <div>
@@ -39,7 +41,28 @@ function Header() {
               </Link>{" "}
               |{" "}
               <Link className="nav-link" to="/cart">
-                <img className="headerIcon" src= {cartIcon} alt="cart" width="50px"/>
+                <div style={{ position: "relative" }}>
+                  <img
+                    className="headerIcon"
+                    src={cartIcon}
+                    alt="cart"
+                    width="50px"
+                  />
+                  {cart.length > 0 && <div
+                    style={{
+                      position: "absolute",
+                      top: "-2px",
+                      height: "10px",
+                      left: "-2px",
+                      width: "10px",
+                      borderRadius: "50%",
+                      backgroundColor: "red",
+                      color: "white",
+                    }}
+                  >
+                    {cart.length}
+                  </div>}
+                </div>
               </Link>
             </nav>
           </div>

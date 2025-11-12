@@ -4,7 +4,7 @@ import cartIcon from "../../img/cartIcon.png";
 import { Link } from "react-router-dom";
 import { useCart } from "../../Context/CartContext";
 
-function Header() {
+function MultiHeader() {
   const { cart } = useCart();
   return (
     <>
@@ -78,4 +78,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default MultiHeader;
